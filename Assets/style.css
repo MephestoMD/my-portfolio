@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #E2E4E5;
+}
+
+header {
+    padding: 50px;
+    font-family: "Verdana", Tahoma, sans-serif;
+    background-image: url("Images/Header.jpg");
+    background-size: cover;
+    border-bottom: 5px solid #B7B8B8;
+}
+
+h1 {
+    display: inline-block;
+    padding: 10px;
+    font-size: 38px;
+    box-shadow: 10px 10px 5px #7CA2D6;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+h1 p {
+    font-size: 14px;
+    font-style: italic;
+    color: #B7B8B8;
+}
+
+nav {
+    float: right;
+    margin-left: 50px;
+    margin-top: 35px;
+    margin-right: 35px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul {
+    font-size: 22px;
+    list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+    li {
+        margin-left: 30px;
+        display: inline-block;
+        margin-bottom: 40px;
+        border: 2px solid #E2E4E5;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #7CA2D6;
+        padding: 5px;
+        background-color: black;
+        }
+}
+
+@media screen and (max-width: 767px) {
+
+    li {
+        margin-left: 10px;
+        display: inline-block;
+        margin-bottom: 40px;
+        border: 2px solid #E2E4E5;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #7CA2D6;
+        padding: 5px;
+        background-color: black;
+        }
+}
+
+a {
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover, li:hover {
+    background-color: #E2E4E5;
+    color: black;
+}
+
+section {
+    position: relative;
+}
+.hero {
+    height: 300px;
+    width: 100%;
+    background-image: url(Images/Hero2.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.me {
+    margin: 10px 10px;
+    height: 250px;
+    width: 15%;
+    border: 2px solid #E2E4E5;
+    border-radius: 50%;
+    background-image: url(Images/Me.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+}
+
+section h2 {
+    position: absolute;
+    bottom: 75%;
+    left: 22%;
+    
+}
