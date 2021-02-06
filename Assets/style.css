@@ -3,13 +3,19 @@
     padding: 0;
     margin: 0;
     color: #E2E4E5;
+    font-family: "Verdana", Tahoma, sans-serif;
+}
+
+html {
+    background-color: black;
 }
 
 header {
     padding: 50px;
-    font-family: "Verdana", Tahoma, sans-serif;
-    background-image: url("Images/Header.jpg");
-    background-size: cover;
+    /* background-image: url("Images/Header.jpg"); */
+    /* background-size: cover; */
+    /* background-position: bottom; */
+    background-color: black;
     border-bottom: 5px solid #B7B8B8;
 }
 
@@ -20,6 +26,7 @@ h1 {
     box-shadow: 10px 10px 5px #7CA2D6;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    width: 40%;
 }
 
 h1 p {
@@ -29,55 +36,37 @@ h1 p {
 }
 
 nav {
-    float: right;
-    margin-left: 50px;
-    margin-top: 35px;
-    margin-right: 35px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-size: 22px;
 }
 
 ul {
-    font-size: 22px;
     list-style-type: none;
-}
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: -50px;
+  }
 
-@media screen and (min-width: 768px) {
-    li {
-        margin-left: 30px;
-        display: inline-block;
-        margin-bottom: 40px;
-        border: 2px solid #E2E4E5;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px #7CA2D6;
-        padding: 5px;
-        background-color: black;
-        }
-}
-
-@media screen and (max-width: 767px) {
-
-    li {
-        margin-left: 10px;
-        display: inline-block;
-        margin-bottom: 40px;
-        border: 2px solid #E2E4E5;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px #7CA2D6;
-        padding: 5px;
-        background-color: black;
-        }
-}
+  li {
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid #E2E4E5;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #7CA2D6;
+    padding: 5px;
+    margin-left: 5px;
+  }
 
 a {
     text-decoration: none;
-    border-radius: 5px;
+    padding: 30px;
 }
 
-a:hover, li:hover {
+li:hover {
     background-color: #E2E4E5;
+}
+
+a:hover {
     color: black;
 }
 
@@ -90,7 +79,7 @@ section {
     background-image: url(Images/Hero2.jpg);
     background-size: cover;
     background-position: center;
-    z-index: -1;
+    border-bottom: 5px solid #B7B8B8;
 }
 
 .me {
@@ -113,4 +102,25 @@ section h2 {
     bottom: 75%;
     left: 22%;
     
+}
+
+aside {
+    float: left;
+    flex-wrap: wrap;
+}
+
+.aside-item {
+    font-size: 48px;
+}
+
+div {
+    margin: 50px 10px;
+    padding: 10px;
+    border-right: 2px solid #7CA2D6;
+}
+
+@media screen and (max-width: 768px) {
+    ul{
+        flex-direction:row;
+    }
 }
